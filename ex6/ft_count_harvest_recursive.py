@@ -4,7 +4,7 @@ def ft_count_harvest_recursive() -> None:
     print("Harvest time!")
 
 
-def ft_helper(current, day) -> None:
+def ft_helper(current: int, day: int) -> None:
     print(current)
     if current < day:
         ft_helper(current + 1, day)
