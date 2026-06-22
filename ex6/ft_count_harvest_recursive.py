@@ -1,3 +1,10 @@
-def ft_count_harvest_iterative():
-    day = int(input("Days until harvest:"))
-    for 
+def ft_count_harvest_recursive() -> None:
+    day = int(input("Days until harvest: "))
+    ft_helper(1, day)
+    print("Harvest time!")
+
+
+def ft_helper(current, day) -> None:
+    print(current)
+    if current < day:
+        ft_helper(current + 1, day)
